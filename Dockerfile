@@ -3,7 +3,7 @@ FROM debian:11.6
 COPY ./entrypoint.sh /tmp
 
 RUN apt-get update && \
-apt-get upgrade && \
+apt-get upgrade -y && \
 apt-get install -y openjdk-17-jdk ca-certificates wget && \
 mkdir /data && \
 useradd -d /data minecraft && \

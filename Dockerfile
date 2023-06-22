@@ -10,7 +10,7 @@ useradd -d /data minecraft && \
 mv /tmp/entrypoint.sh  / && \
 chmod +x /entrypoint.sh && \
 chown -R  minecraft:minecraft /data/ && \
-wget https://piston-data.mojang.com/v1/objects/c9df48efed58511cdd0213c56b9013a7b5c9ac1f/server.jar -P /tmp && \
+wget https://piston-data.mojang.com/v1/objects/84194a2f286ef7c14ed7ce0090dba59902951553/server.jar -P /tmp && \
 chown minecraft:minecraft /tmp/server.jar
 
 WORKDIR /data

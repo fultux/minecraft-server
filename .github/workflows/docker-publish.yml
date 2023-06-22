@@ -28,4 +28,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/minecradft-server:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/minecraft-server:latest

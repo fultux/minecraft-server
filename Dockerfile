@@ -1,4 +1,4 @@
-FROM debian:11.6
+FROM debian:11.11
 
 COPY ./entrypoint.sh /tmp
 
@@ -10,7 +10,7 @@ useradd -d /data minecraft && \
 mv /tmp/entrypoint.sh  / && \
 chmod +x /entrypoint.sh && \
 chown -R  minecraft:minecraft /data/ && \
-wget https://piston-data.mojang.com/v1/objects/84194a2f286ef7c14ed7ce0090dba59902951553/server.jar -P /tmp && \
+wget https:https://piston-data.mojang.com/v1/objects/45810d238246d90e811d896f87b14695b7fb6839/server.jar -P /tmp && \
 chown minecraft:minecraft /tmp/server.jar
 
 WORKDIR /data

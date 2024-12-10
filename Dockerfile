@@ -1,4 +1,4 @@
-FROM debian:11.11
+FROM debian:12.8
 
 COPY ./entrypoint.sh /tmp
 
